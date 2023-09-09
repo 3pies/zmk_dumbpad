@@ -25,6 +25,8 @@
     &kp N7 &kp N8 &kp N9 &kp STAR
     &mo 1  &kp N0 &kp DOT &kp SLASH
             >;
+
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         nav_layer {
@@ -40,6 +42,8 @@
     &bt BT_CLR &trans   &trans    &trans
     &trans     &trans   &kp RET   &trans
             >;
+
+            sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
         };
     };
 };
