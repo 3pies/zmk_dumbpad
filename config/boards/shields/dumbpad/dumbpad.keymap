@@ -82,13 +82,13 @@
 // -------------------
 // | SCRSH  |  UP  |  -  | BSPC |
 // | LEFT   | DOWN |RIGHT| DEL  |
-// | DSK L  |DSK UP|DSK R|  -   |
+// | DSK L  |DSK UP|DSK R| ESC  |
 // | NUMPAD |ADJUST|  -  |  -   |
 // ----------------------
             bindings = <
                 &scrnsht &kp UP &none &kp BSPC
                 &kp LEFT &kp DOWN &kp RIGHT &kp DELETE
-                &desk_lft_kp    &desk_up_kp    &desk_rgt_kp &none
+                &desk_lft_kp    &desk_up_kp    &desk_rgt_kp &kp ESC
     &kp K_MUTE  &mo NUMPAD  &mo ADJUST &none &none 
             >;
 
@@ -107,7 +107,7 @@
                 &kp N1 &kp N2 &kp N3 &kp DOT
                 &kp N4 &kp N5 &kp N6 &kp COMMA
                 &kp N7 &kp N8 &kp N9 &none
-    &kp K_MUTE  &trans      &none  &kp N0 &none
+    &kp K_MUTE  &trans &none  &kp N0 &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
